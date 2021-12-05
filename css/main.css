@@ -15,6 +15,7 @@
 html,body {
   font-family: 'Montserrat', 'Open Sans', 'Sans Serif';
   font-size: 16px;
+  overflow: hidden;
 }
 
 a {
