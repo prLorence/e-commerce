@@ -19,7 +19,7 @@ html,body {
 
 a {
   text-decoration: none;
-  color: var(---dark-green);
+  color: var(--dark-green);
   font-weight: 600; 
 }
 
@@ -44,8 +44,68 @@ ul {
 }
 
 .nav-header {
-  display: flex;
+  padding: 0em 1em;
 }
+
+.nav-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* TODO: add desktop nav-menu */
+}
+.nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  color: var(--dark-green);
+  background-color: var(--white);
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-menu.active{
+  left: 0;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--dark-green);
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
 
 .logo {
   color: var(--dark-green);
@@ -61,8 +121,8 @@ ul {
 
 .tagline {
   font-weight: 300;
-  font-size: 2.5em;
   margin-top: 0;
+  font-size: 2.5em;
 }
 
 .button-link {
@@ -87,3 +147,5 @@ ul {
   padding: 0.9em 2.5em;
   border-radius: 5px;
 }
+
+
