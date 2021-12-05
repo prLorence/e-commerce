@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --border-color: rgba(134, 110, 110, 1);
+  --dark-green: rgba(28, 51, 34, 1);
+  --white: rgba(255, 255, 255, 1);
+}
+
+html,body {
+  font-family: 'Montserrat', 'Open Sans', 'Sans Serif';
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(---dark-green);
+  font-weight: 600; 
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/main-pic.png);
+  background-size: cover;
+}
+
+.nav-header {
+  display: flex;
+}
+
+.logo {
+  color: var(--dark-green);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.tagline {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+.button-link {
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-link {
+  color: var(--dark-green);
+  border: none;
+  padding: 0.9em 2.1em;
+  margin: 2em 0 1em 0;
+  border-radius: 5px;
+}
+
+.sign-up-link {
+  color: var(--white);
+  border: 1px solid white;
+  background: none;
+  padding: 0.9em 2.5em;
+  border-radius: 5px;
+}
