@@ -15,7 +15,6 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 
 function shopPage() {
   const shopGrid = document.getElementById("shop-grid");
-
   shopGrid.appendChild(
     itemDesc(
       `pic-1`, "cactus", "smol", "2x2", "P200.00"
@@ -24,7 +23,7 @@ function shopPage() {
 
   shopGrid.appendChild(
     itemDesc(
-      `pic-2`, "plant", "smoler", "2x3", "P220.00"
+      `pic-2`, "cactus", "smol", "2x2", "P200.00"
     )
   )
 
@@ -36,6 +35,14 @@ function itemDesc(imageName, plantName, description, size, price) {
   const shopItem = document.createElement("div");
   shopItem.classList.add("shop-item")
   shopItem.id = `${imageName}`
+
+  const plantDiv = document.createElement("div")
+  plantDiv.classList.add("plant-div")
+  plantDiv.id = "plant-div"
+
+  const quantity = document.createElement("div")
+  quantity.classList.add("quantity")
+  quantity.id = "plnt-div"
 
   const addToCart = document.createElement("button");
   addToCart.classList.add("add-to-cart")
@@ -51,7 +58,7 @@ function itemDesc(imageName, plantName, description, size, price) {
 
   const plantDesc = document.createElement("div")
   plantDesc.classList.add("plant-desc")
-  plantDesc.id = "plantDesc"
+  plantDesc.id = "plant-desc"
 
   const itemName = document.createElement("h3");
   itemName.classList.add("plant-name")
@@ -73,7 +80,7 @@ function itemDesc(imageName, plantName, description, size, price) {
   itemImage.src = `images/${imageName.toLowerCase()}.jpg`
   itemImage.classList.add("item-image")
 
-  const count = document.createElement("div")
+  const count = document.createElement("h2")
   count.classList.add("counter")
   count.innerHTML = countVal;
   count.id = "count"
@@ -84,6 +91,9 @@ function itemDesc(imageName, plantName, description, size, price) {
   addButton.textContent = "+"
   addButton.addEventListener("click", () => {
     countVal++
+    if (countVal < 0) {
+      countVal = 0
+    }
     count.innerHTML = countVal;
     console.log(countVal)
   })
@@ -94,6 +104,9 @@ function itemDesc(imageName, plantName, description, size, price) {
   subButton.textContent = "-"
   subButton.addEventListener("click", () => {
     countVal--
+    if (countVal < 0) {
+      countVal = 0;
+    }
     count.innerHTML = countVal;
     console.log(countVal)
   })
@@ -106,16 +119,19 @@ function itemDesc(imageName, plantName, description, size, price) {
   imageDesc.appendChild(itemSize)
   imageDesc.appendChild(itemPrice)
   plantDesc.appendChild(imageDesc)
-  plantFunc.appendChild(subButton)
-  plantFunc.appendChild(count)
-  plantFunc.appendChild(addButton)
+
+  quantity.appendChild(subButton)
+  quantity.appendChild(count)
+  quantity.appendChild(addButton)
+
+  plantFunc.appendChild(quantity)
+
   plantFunc.appendChild(addToCart)
-  shopItem.appendChild(plantDesc)
-  shopItem.appendChild(plantFunc)
 
+  plantDiv.appendChild(plantDesc)
+  plantDiv.appendChild(plantFunc)
 
-
-
+  shopItem.appendChild(plantDiv)
 
   return shopItem;
 }
