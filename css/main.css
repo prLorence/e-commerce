@@ -73,8 +73,10 @@ ul {
   left: 0;
 }
 
-.nav-item {
-  margin: 16px 0;
+.nav-item  {
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 .hamburger {
@@ -110,6 +112,7 @@ ul {
 
 .logo {
   color: var(--dark-green);
+  margin: 0;
 }
 
 .description {
