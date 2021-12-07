@@ -55,6 +55,7 @@ ul {
   align-items: center;
   /* TODO: add desktop nav-menu */
 }
+
 .nav-menu {
   display: flex;
   position: fixed;
@@ -115,6 +116,12 @@ ul {
   margin: 0;
 }
 
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -148,8 +155,97 @@ ul {
   color: var(--white);
   border: 1px solid white;
   background: none;
-  padding: 0.9em 2.5em;
   border-radius: 5px;
+  padding: 0.9em 2.5em;
+}
+
+/* TODO: change background of description and plant class */
+
+@media screen and (min-width: 900px) {
+
+  .landing-page {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+  .nav-item {
+    font-size: 1.1em;
+    margin: 0;
+  }
+
+  .sign-up {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: white;
+    background-color: var(--dark-green);
+    border-radius: 5px;
+  }
+
+  .nav-bar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    left: 0;
+    align-items: center;
+    gap: 60px;
+    grid-column: 3 / 3;
+  } 
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: 0;
+    background-color: white;
+    transition: 0;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .description {
+    width: 100%;
+    height: 100%;
+    background: var(--dark-green); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .shop-link {
+    margin: 0;
+  }
+
+  .call-to-action {
+    margin-left: 6em;
+    text-align: left;
+  }
+
+  .button-link {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    gap: 2em;
+  }
+
+  .sign {
+    color: var(--white);
+  }
+  
+
+
 }
 
 

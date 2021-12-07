@@ -1,7 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const signUp = document.querySelector(".sign-up-link")
 let countVal = 0;
-
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
@@ -72,9 +72,9 @@ function itemDesc(imageName, plantName, description, size, price) {
   itemSize.classList.add("plant-size")
   itemSize.textContent = "- " + size
 
-  const itemPrice = document.createElement("p");
+  const itemPrice = document.createElement("h3");
   itemPrice.classList.add("plan-price")
-  itemPrice.textContent = "- " + price
+  itemPrice.textContent = price
 
   const itemImage = document.createElement("img");
   itemImage.src = `images/${imageName.toLowerCase()}.jpg`

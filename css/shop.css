@@ -204,6 +204,33 @@ ul {
   margin-bottom: 1.1em;
 }
 
+@media screen and (min-width: 640px) {
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+}
 
 
 /* TODO: fix the background color */
