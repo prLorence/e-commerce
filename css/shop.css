@@ -10,7 +10,7 @@
   --border-color: rgba(134, 110, 110, 1);
   --dark-green: rgba(28, 51, 34, 1);
   --white: rgba(255, 255, 255, 1);
-  --off-white: rgba(227, 227, 227, 1);
+  --off-white: rgba(246, 249, 252, 1);
 }
 
 html,body {
@@ -54,7 +54,6 @@ ul {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  /* TODO: add desktop nav-menu */
 }
 .nav-menu {
   display: flex;
@@ -133,7 +132,7 @@ ul {
   border: 2px solid var(--dark-green);
   margin: 0.5em 1em; 
   border-radius: 5px;
-  text-align: center;
+  text-align: left;
 }      
 
 .shop-item {
@@ -155,25 +154,33 @@ ul {
 
 .plant-div {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
+  margin: 1em 0 1em 0;
 }
 
 .quantity {
   text-align: center;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-
+  align-content: center;
 }
 
 .add-button, .sub-button {
   border: none;
-  padding: .1em .3em .1em .3em;
-  font-size: 2.3em;
+  font-size: 2em;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  max-width: 100px;
+  background: var(--white);
 }
 
 .add-to-cart {
   background: none;
+  width: 100%;
+  height: 50px;
   border: 1px solid var(--dark-green);
   border-radius: 5px;
   padding: .5em;
@@ -193,4 +200,10 @@ ul {
   padding: 1em;
 }
 
+.plant-desc * {
+  margin-bottom: 1.1em;
+}
 
+
+
+/* TODO: fix the background color */
