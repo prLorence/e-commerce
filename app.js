@@ -17,13 +17,103 @@ function shopPage() {
   const shopGrid = document.getElementById("shop-grid");
   shopGrid.appendChild(
     itemDesc(
-      `pic-1`, "cactus", "smol", "2x2", "P200.00"
+      `pic-1`, "Mr. Tangerine", "smol tree", "tastes good", "P200.00"
     )
   )
 
   shopGrid.appendChild(
     itemDesc(
-      `pic-2`, "cactus", "smol", "2x2", "P200.00"
+      `pic-2`, "Lili pad with stem", "kewl", "sophisticated", "P500.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-3`, "bush", "weird", "meaningless", "P250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-4`, "cactus man", "strong", "independent", "P63,466.40"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-5`, "wizard thing", "intimidating", "meaningful", "P252,350.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-6`, "cactus man (bent)", "strong", "kinda independent", "P2,250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-7`, "tree-ish", "food", "purpose", "P13,250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-8`, "chad bonsay", "knowledge", "brawn", "P23,650.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-9`, "sword plant", "elegance", "bad juju", "P22,350.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-10`, "dagger", "weird", "freedom", "P23,450.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-11`, "alive-ish", "help", "morose", "P8,550.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-12`, "Evil Cactus", "Socialism", "Karens", "P250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-13`, "Hippie", "Forest", "Gump", "P6,750.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-14`, "Tokyo", "Snow", "Heat", "P250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-15`, "Reality Bush", "Malleability", "Human Mind", "P267,450.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-16`, "Treepac", "shy", "sophisticated", "P50.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-17`, "Bojak", "Bernie", "Sanders", "P250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-18`, "Tesla", "Self Growing", "Daddy Elon", "555,555.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-19`, "Dogie", "Meme", "Coin", "P250.00"
+    )
+  )
+  shopGrid.appendChild(
+    itemDesc(
+      `pic-20`, "BBM", "WHY???", "dull-witted/unintelligent", "P250.00"
     )
   )
 
