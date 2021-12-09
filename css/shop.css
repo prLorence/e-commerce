@@ -150,6 +150,7 @@ ul {
   max-width: 800px;
   max-height: 800px;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .plant-div {
