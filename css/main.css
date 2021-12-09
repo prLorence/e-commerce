@@ -128,12 +128,18 @@ ul {
   align-items: center;
   justify-content: center;
   color: var(--white);
+  
 }
 
 .tagline {
   font-weight: 300;
   margin-top: 0;
-  font-size: 2.5em;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.tagline-desc{
+  margin-bottom: .5em;
+  padding-right: 2em;
 }
 
 .button-link {
@@ -216,7 +222,7 @@ ul {
   }
   
   .description {
-    width: 100%;
+    width: 90%;
     height: 100%;
     background: var(--dark-green); 
     display: flex;
@@ -229,7 +235,7 @@ ul {
   }
 
   .call-to-action {
-    margin-left: 6em;
+    margin-left: 4em;
     text-align: left;
   }
 
