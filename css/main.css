@@ -139,7 +139,6 @@ ul {
 }
 .tagline-desc{
   margin-bottom: .5em;
-  padding-right: 2em;
 }
 
 .button-link {
@@ -235,19 +234,24 @@ ul {
   }
 
   .call-to-action {
-    margin-left: 4em;
+    margin-left: 3em;
     text-align: left;
   }
 
   .button-link {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 3em;
-    gap: 2em;
+    max-width: 330px;
   }
 
   .sign {
     color: var(--white);
+  }
+
+  .tagline-desc {
+    padding-right: 2em;
   }
   
 
