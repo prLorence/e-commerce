@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -10,12 +10,12 @@
   --border-color: rgba(134, 110, 110, 1);
   --dark-green: rgba(28, 51, 34, 1);
   --white: rgba(255, 255, 255, 1);
+  --off-white: rgba(246, 249, 252, 1);
 }
 
 html,body {
-  font-family: 'Montserrat', 'Open Sans', 'Sans Serif';
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
   font-size: 16px;
-  overflow: hidden;
 }
 
 a {
@@ -28,27 +28,14 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
+button:active {
+  transform: scale(0.95);
+ 
 }
 
-.landing-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/main-pic.png);
-  background-size: cover;
-}
-
-.nav-header {
-  padding: 0em 1em;
-}
 
 .nav-bar {
+  background-color: var(--dark-green);
   min-height: 70px;
   display: flex;
   justify-content: space-between;
@@ -75,9 +62,14 @@ ul {
 }
 
 .nav-item  {
-  margin: 20px 0;
+  background: var(--dark-green);
+  color: var(--white);
   font-size: 1.3em;
   font-weight: 400;
+}
+
+.remove {
+  background: none;
 }
 
 .hamburger {
@@ -106,70 +98,79 @@ ul {
   background-color: var(--dark-green);
 }
 
-.nav-link {
-  transition: 0.7s ease;
-}
-
-
 .logo {
-  color: var(--dark-green);
-  margin: 0;
+  color: var(--white);
+  margin-left: 0.5em;
+  text-decoration: none;
+
 }
 
-.call-to-action {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.description {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--white);
-  
+  width: 100%;
+  height: 85vh;
 }
 
-.tagline {
-  font-weight: 300;
-  margin-top: 0;
-  font-size: 3.5em;
-  font-weight: bold;
-}
-.tagline-desc{
-  margin-bottom: .5em;
-}
-
-.button-link {
-  display:  flex;
+.sign-up-container {
+  width: 100%;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+.form {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.form * {
+  margin-bottom: 1em;
 }
 
-.shop-link {
-  color: var(--dark-green);
-  border: none;
-  padding: 0.9em 2.1em;
-  margin: 2em 0 1em 0;
+.form > input {
+  padding: .3em;
+  width: 100%;
+}
+
+.input-border {
+  padding: 5em;
+  border-radius: 5px;
+  border: 1px solid var(--dark-green);
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.sign-up-btn {
+  padding: 1em;
+  border: 1px solid var(--dark-green); 
+  background: none;
+  max-width: 100px;
   border-radius: 5px;
 }
 
-.sign-up-link {
-  border: 1px solid var(--white);
-  color: var(--white);
-  background: none;
-  border-radius: 5px;
-  padding: 0.9em 2.5em;
-}
-.remove {
-  background: none;
-  border: none;
-  color: var(--white);
+.auth {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-top: 1em;
 }
 
-/* TODO: change background of description and plant class */
+.auth button {
+  background: none;
+  border-radius: 5px;
+  border: 1px solid var(--dark-green);
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  max-width: 50px;
+  max-height: 50px;
+}
 
 @media screen and (min-width: 900px) {
 
@@ -262,5 +263,4 @@ ul {
 
 
 }
-
 

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --border-color: rgba(134, 110, 110, 1);
+  --dark-green: rgba(28, 51, 34, 1);
+  --white: rgba(255, 255, 255, 1);
+  --off-white: rgba(246, 249, 252, 1);
+}
+
+html,body {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.nav-header {
+  padding: 0em 1em;
+}
+
+.nav-bar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* TODO: add desktop nav-menu */
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  color: var(--dark-green);
+  background-color: var(--white);
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-menu.active{
+  left: 0;
+}
+
+.nav-item  {
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--dark-green);
+}
+
